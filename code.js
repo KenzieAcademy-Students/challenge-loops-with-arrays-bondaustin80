@@ -5,6 +5,12 @@ const sampleArray = [469, 755, 244, 245, 758, 450, 302, 20, 712, 71, 456, 21, 39
 
 // Your code here
 
+function displayToPage(result) {
+    let element = document.createElement("p")
+    element.innerText = result
+    document.body.append(element)
+}
+
 //Basic
 
 function displayAllElements(array) {
@@ -15,6 +21,7 @@ function displayAllElements(array) {
         }
         elementList = elementList + array[i]
     }
+    displayToPage(elementList)
     return elementList
 }
 
@@ -38,6 +45,7 @@ function displayEvenElements(array) {
             elementList = elementList + array[i]
         }
     }
+    displayToPage(elementList)
     return elementList
 }
 
@@ -61,6 +69,7 @@ function displayOddElements(array) {
             elementList = elementList + array[i]
         }
     }
+    displayToPage(elementList)
     return elementList
 }
 
@@ -84,6 +93,7 @@ function divisibleByEight(array) {
             elementList = elementList + array[i]
         }
     }
+    displayToPage(elementList)
     return elementList
 }
 
@@ -106,6 +116,7 @@ function allElementsSquared(array) {
         let square = array[i] * array[i]
         elementList = elementList + square
     }
+    displayToPage(elementList)
     return elementList
 }
 
@@ -124,6 +135,7 @@ function sumOfElements(array) {
     for (let i = 0; i < array.length; i++) {
         sum = sum + array[i]
     }
+    displayToPage(sum)
     return sum
 }
 
@@ -144,6 +156,7 @@ function getSmallestElement(array) {
             min = array[i]
         }
     }
+    displayToPage(min)
     return min
 }
 
@@ -164,6 +177,7 @@ function getLargestElement(array) {
             max = array[i]
         }
     }
+    displayToPage(max)
     return max
 }
 
@@ -189,6 +203,7 @@ function divisibleByThree() {
             divisible = divisible + i
         }
     }
+    displayToPage(divisible)
     return divisible
 }
 
@@ -212,6 +227,7 @@ function divisibleBySeven() {
             divisible = divisible + i
         }
     }
+    displayToPage(divisible)
     return divisible
 }
 
@@ -235,6 +251,7 @@ function divisibleByThreeAndSeven() {
             divisible = divisible + i
         }
     }
+    displayToPage(divisible)
     return divisible
 }
 
@@ -253,6 +270,7 @@ function sumToTwenty() {
     for (let i = 1; i <= 20; i++) {
         sum = sum + i
     }
+    displayToPage(sum)
     return sum
 }
 
@@ -277,6 +295,7 @@ function ascendingPositive(start, end) {
         }
         list = list + i
     }
+    displayToPage(list)
     return list
 }
 
@@ -306,6 +325,7 @@ function descendingPositive(start, end) {
         }
         list = list + i
     }
+    displayToPage(list)
     return list
 }
 
@@ -335,6 +355,7 @@ function ascendingNegative(start, end) {
         }
         list = list + i
     }
+    displayToPage(list)
     return list
 }
 
@@ -364,6 +385,7 @@ function descendingNegative(start, end) {
         }
         list = list + i
     }
+    displayToPage(list)
     return list
 }
 
@@ -395,6 +417,7 @@ function descendingOdds(start, end) {
             list = list + i
         }
     }
+    displayToPage(list)
     return list
 }
 
